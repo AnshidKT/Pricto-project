@@ -1,0 +1,250 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+@font-face {
+  font-family: "gilll";
+  src: url("../Fonts/GILB____s.TTF");
+}
+/* -----------------------------NAvbar------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* #navbarSupportedContent{
+  background-color: red;
+
+} */
+#contents {
+  /* background-color: yellow; */
+  margin-left: 30%;
+  width: 700px;
+}
+
+@media (max-width: 500px) {
+  #contents {
+    /* background-color: red; */
+    width: 400px;
+    margin-right: 10%;
+  }
+  .container-fluid {
+    /* background-color: green; */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+#nav-bar-head {
+  font-size: 30px;
+  font-family: "Montserrat";
+  margin-left: 50px;
+}
+.section-thrd-heading {
+  font-family: "gilll";
+  margin-top: 8px;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.diffcolor {
+  color: grey;
+}
+.card {
+  border: none;
+}
+
+.triangle-container {
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+
+.triangle-container .triangleunder {
+  display: inline-block;
+  position: relative;
+}
+
+.triangle-container .triangleunder::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: red transparent transparent transparent;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-title {
+  font-size: 14.5px;
+}
+.Section-3-linethru {
+  color: grey;
+  text-decoration: line-through;
+  margin-right: 16px;
+}
+.card-text {
+  font-size: small;
+  text-align: center;
+}
+.section-3-card1 {
+  margin-top: px;
+}
+.card-img-top {
+  width: 170px;
+  height: 210px;
+  margin-left: 15px;
+}
+
+.section-3-trending {
+  display: flex;
+  align-items: center;
+}
+.section-3-headingchild {
+  display: flex;
+  justify-content: space-around;
+  width: 220px;
+}
+.secton-3-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-top: 25px;
+}
+.section-3-main {
+  width: 65%;
+  margin-left: 220px;
+}
+.card-group {
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .section-3-headingchild {
+    display: none;
+  }
+
+  .secton-3-heading {
+    width: auto;
+  }
+  .section-3-main {
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* =============================================FOOTER====================================================== */
+
+.footer-container {
+  width: 100%;
+  height: 350px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-sub-container {
+  width: 80%;
+  height: 350px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.aura-ftr-box {
+  width: 250px;
+  height: 250px;
+  /* background-color: rgb(46, 44, 44); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.ftr-heading {
+  font-family: "Montserrat";
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.ftr-span {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.479);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.prdcts-ftr-box {
+  width: 200px;
+  height: 250px;
+  /* background-color: rgb(80, 60, 60); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Quixklink-ftr-box {
+  width: 200px;
+  height: 210px;
+  /* background-color: rgb(82, 77, 77); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: -40px;
+}
+.follows-ftr-box {
+  width: 200px;
+  height: 200px;
+  /* background-color: rgb(39, 36, 36); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: -50px;
+}
+.ftr-media-div {
+  width: 90px;
+  height: 30px;
+  display: flex;
+  /* background-color: black; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  }
+  .footer-sub-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    height: 100%;
+
+    width: 100%;
+  }
+  .aura-ftr-box {
+    width: 180px;
+    margin-left: 40px;
+    /* background-color: rgb(43, 69, 92); */
+  }
+  .ftr-span {
+    font-size: 14px;
+  }
+  .prdcts-ftr-box {
+    /* background-color: rgb(27, 38, 48); */
+    width: 150px;
+    margin-left: 10px;
+  }
+
+  .Quixklink-ftr-box {
+    /* background-color: rgb(27, 38, 48); */
+    width: 150px;
+    margin-left: 40px;
+  }
+}
